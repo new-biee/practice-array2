@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = [-3, 5, 1, 13, 2, 10]; //khai bao mang
+    let max = numbers[0]; //khai bao bien max co gia tri bang phan tu dau tien cua mang
+    let index = 0; //khai bao bien
+
+    for (let i = 1; i < numbers.length; i++) { //viet vong lap di qua cac phan tu trong mang
+        if (numbers [i] > max) { //neu numbers [i] > vi tri dau cua mang thi
+            max = numbers[i]; // max = number[i]
+            index = i; // gan gia tri index = i;
+        }
+    }
+    document.write("max: " + max + " at position " + index);
+
+</script>
+</body>
+</html>
